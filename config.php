@@ -1,15 +1,10 @@
-<?php 
+<?php
 
-	$username = "root";
+$username = "root";
+$password = "pw";
+$hostname = "3.235.168.23";
+$dbname = "booku";
 
-	$password = "";
-
-	$hostname = "localhost"; 
-	
-	$dbname = "booku";
-
-	global $dbhandle;
-
-	$dbhandle=mysqli_connect($hostname,$username,$password,$dbname) or die (mysqli_error());
+$dbhandle = mysqli_connect($hostname, $username, $password, $dbname) or die(mysqli_error());
 
 ?>
